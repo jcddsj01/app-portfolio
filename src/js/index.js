@@ -141,14 +141,25 @@ voltarComecoBtn.addEventListener("click", () => {
 });
 // End - Fim
 
-// Captures the name on the form and displays it in the text area of ​​the message.
-// Pega o nome do formulário e mostra no textarea da mensagem.
+// Captures the name of the form and displays it in the message textarea.
+// Captura o nome do formulário e mostra no textarea da mensagem.
 const nameInput = document.getElementById("name");
 const messageTextarea = document.getElementById("message");
 
 nameInput.addEventListener("input", () => {
-    const name = nameInput.value;
-    const message = `Olá, sou ${name}, e estou entrando em contato para podermos conversar mais detalhadamente.`;
-    messageTextarea.value = message;
+    updateMessage();
 });
+
+messageTextarea.addEventListener("input", () => {
+    // Impedir que a mensagem seja atualizada automaticamente se o usuário estiver editando o texto manualmente.
+    if (!nameInput.value) {
+        updateMessage();
+    }
+});
+
+function updateMessage() {
+    const name = nameInput.value;
+    const message = name ? `Olá, sou ${name}, e estou entrando em contato para podermos conversar mais detalhadamente.` : "";
+    messageTextarea.value = message;
+}
 // End - Fim
