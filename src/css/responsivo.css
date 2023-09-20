@@ -3,28 +3,54 @@
         padding: 25px;
     }
 
-    .icone-menu-responsivo {
+    /* Estilo do icone do menu */
+    .button {
         display: flex;
-        font-size: 30px;
-        cursor: pointer;
-        color: var(--cor-cinza-claro);
-        background-color: var(--cor-cinza-escuro);
-        padding: 3px 10px 5px;
-        border-radius: 3px;
+        flex-direction: column;
+        margin: auto 0; 
+        row-gap: 4px;
+        align-items: center;
+        background: transparent;
+        border: 0;
     }
+
+    .button:hover {
+        cursor: pointer;
+    }
+
+    .button span {
+        width: 30px;
+        height: 2px;
+        border-radius: 10px;
+        background: var(--cor-cinza-claro);
+        transition: all 0.4s;
+    }
+
+    .button.active span:nth-child(2) {
+        opacity: 0;
+        width: 0px;
+    }
+
+    .button.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-4px, 4px);
+    }
+
+    .button.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -4px);
+    }
+    /* Fim - Estilo do Icone do Menu */
 
     .menu {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 112px;
-        right: 30px;
         background-image: linear-gradient(to right, var(--cor-preto), var(--cor-cinza-escuro));
         box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
         z-index: 1;
-        width: auto;
         padding: 10px;
         border-radius: 2px 2px 2px 30px;
+        width: 100%;
+        position: absolute;
+        margin-top: 248px;         
     }
 
     .menu.show {
@@ -89,28 +115,54 @@
         padding: 25px
     }
 
-    .icone-menu-responsivo {
+    /* Estilo do icone do menu */
+    .button {
         display: flex;
-        font-size: 30px;
-        cursor: pointer;
-        color: var(--cor-cinza-claro);
-        background-color: var(--cor-cinza-escuro);
-        padding: 3px 10px 5px;
-        border-radius: 3px
+        flex-direction: column;
+        margin: auto 0; 
+        row-gap: 4px;
+        align-items: center;
+        background: transparent;
+        border: 0;
     }
+
+    .button:hover {
+        cursor: pointer;
+    }
+
+    .button span {
+        width: 30px;
+        height: 2px;
+        border-radius: 10px;
+        background: var(--cor-cinza-claro);
+        transition: all 0.4s;
+    }
+
+    .button.active span:nth-child(2) {
+        opacity: 0;
+        width: 0px;
+    }
+
+    .button.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-4px, 4px);
+    }
+
+    .button.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -4px);
+    }
+    /* Fim - Estilo do Icone do Menu */
 
     .menu {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 112px;
-        right: 30px;
         background-image: linear-gradient(to right, var(--cor-preto), var(--cor-cinza-escuro));
         box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
         z-index: 1;
-        width: auto;
         padding: 10px;
-        border-radius: 2px 2px 2px 30px
+        border-radius: 2px 2px 2px 30px;
+        width: 100%;
+        position: absolute;
+        margin-top: 248px;        
     }
 
     .menu.show {

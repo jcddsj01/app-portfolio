@@ -45,10 +45,13 @@ body {
 .desenvolvedor {
     text-transform: uppercase;
 }
+/* End - Fim */
 
-.icone-menu-responsivo {
-    display: none
+/* Oculta o estilo do icone do menu */
+.button {
+    display: none;
 }
+/* End - Fim */
 
 .item-menu {
     text-transform: uppercase;

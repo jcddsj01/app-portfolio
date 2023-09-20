@@ -87,8 +87,16 @@ telefoneInput.addEventListener("input", e => {
 });
 // End - Fim
 
+// Ativa o botão para um menu
+const button = document.getElementById('button');
+
+function handleClick() {
+    button.classList.toggle('active');
+}
+// End - Fim
+
 // Menu 
-const iconeMenu = document.querySelector(".icone-menu-responsivo");
+const iconeMenu = document.getElementById("button");
 const menu = document.querySelector(".menu");
 const links = document.querySelectorAll(".menu a");
 
