@@ -46,11 +46,11 @@
         background-image: linear-gradient(to right, var(--cor-preto), var(--cor-cinza-escuro));
         box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
         z-index: 1;
+        width: 100%;
         padding: 10px;
         border-radius: 2px 2px 2px 30px;
-        width: 100%;
         position: absolute;
-        margin-top: 248px;         
+        margin-top: 248px;        
     }
 
     .menu.show {

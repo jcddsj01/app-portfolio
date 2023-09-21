@@ -4,17 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
-    <title>Sejam todos bem-vindos ao meu portfólio.</title>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Icons -->
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- CSS -->
     <link href="./src/css/reset.css" rel="stylesheet">
     <link href="./src/css/estilos.css" rel="stylesheet">
     <link href="./src/css/responsivo.css" rel="stylesheet">
+    <!-- Javascript -->
     <script src="./src/js/index.js" defer></script>
+    <!-- AOS JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Sejam todos bem-vindos ao meu portfólio.</title>
 </head>
 
 <body>
@@ -41,7 +49,7 @@
             <h1 class="destaque-ola">Olá,</h1>
             <h1>Sou <span class="destaque-texto">José Carlos,</span></h1>
             <h1>Desenvolvedor Web Front-end Júnior</h1>
-            <a href="#fale-comigo" class="contate-me" id="contate-me">Contate-me</a>
+            <a href="#fale-comigo" class="contate-me" id="contate-me" data-aos="zoom-in-right" data-aos-duration="1000">Contate-me</a>
         </section>
 
         <section class="introducao" id="introducao">
@@ -56,7 +64,7 @@
         </section>
 
         <section class="resumo-pessoal">
-            <img alt="Foto do Perfil" src="./src/img/foto-perfil.jpg" title="Foto do Perfil" class="foto-perfil">
+            <img alt="Foto do Perfil" src="./src/img/foto-perfil.jpg" title="Foto do Perfil" class="foto-perfil" data-aos="fade-down" data-aos-delay="150" data-aos-duration="1000">
             <h2 class="titulo">resumo pessoal</h2>
             <p class="paragrafo">Começando, deixe-me falar um pouco <span class="destaque-texto">sobre
                     mim.</span><br>Sou um <span class="destaque-texto">entusiasta</span> da <span
@@ -111,8 +119,8 @@
                 </a>
 
                 <a href="https://github.com/jcddsj01/landing-page-indecor" rel="noopener noreferrer" target="_blank">
-                    <img alt="Projeto - InDecor" src="./src/img/landing-page-indecor.png"
-                        title="Projeto - InDecor" draggable="false">
+                    <img alt="Projeto - InDecor" src="./src/img/landing-page-indecor.png" title="Projeto - InDecor"
+                        draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/barber-dev" rel="noopener noreferrer" target="_blank">
@@ -126,8 +134,8 @@
                 </a>
 
                 <a href="https://github.com/jcddsj01/gerenciador-financa" rel="noopener noreferrer" target="_blank">
-                    <img alt="Gerenciador de Finanças" src="./src/img/gerenciador-financas.png" title="Gerenciador de Finanças"
-                        draggable="false">
+                    <img alt="Gerenciador de Finanças" src="./src/img/gerenciador-financas.png"
+                        title="Gerenciador de Finanças" draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/formulario-com-validacao" rel="noopener noreferrer"
@@ -152,7 +160,7 @@
             </p>
 
             <div class="linguagens-de-programacao">
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="100">
                     <a href="https://www.w3schools.com/html/html_intro.asp" class="link-linguagem"
                         rel="noopener noreferrer" target="_blank">
                         <img alt="HTML5" src="./src/img/html5.png" title="HTML5" class="logo">
@@ -160,7 +168,7 @@
                     </a>
                 </div>
 
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="200">
                     <a href="https://www.w3schools.com/css/css_intro.asp" class="link-linguagem"
                         rel="noopener noreferrer" target="_blank">
                         <img alt="CSS3" src="./src/img/css3.png" title="CSS3" class="logo">
@@ -168,7 +176,7 @@
                     </a>
                 </div>
 
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="300">
                     <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" class="link-linguagem"
                         rel="noopener noreferrer" target="_blank">
                         <img alt="Javascript" src="./src/img/javascript.png" title="Javascript" class="logo">
@@ -176,7 +184,7 @@
                     </a>
                 </div>
 
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="400">
                     <a href="https://www.typescriptlang.org/docs/handbook/2/basic-types.html" class="link-linguagem"
                         rel="noopener noreferrer" target="_blank">
                         <img alt="Typescript" src="./src/img/typescript.png" title="Typescript" class="logo">
@@ -184,7 +192,7 @@
                     </a>
                 </div>
 
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="500">
                     <a href="https://docs.python.org/pt-br/3/" class="link-linguagem" rel="noopener noreferrer"
                         target="_blank">
                         <img alt="Python" src="./src/img/python.png" title="Python" class="logo">
@@ -192,7 +200,7 @@
                     </a>
                 </div>
 
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="600">
                     <a href="https://www.php.net/docs.php" class="link-linguagem" rel="noopener noreferrer"
                         target="_blank">
                         <img alt="PHP" src="./src/img/php.png" title="PHP" class="logo">
@@ -200,7 +208,7 @@
                     </a>
                 </div>
 
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="700">
                     <a href="https://www.postgresql.org/docs/" class="link-linguagem" rel="noopener noreferrer"
                         target="_blank">
                         <img alt="PostgreSQL" src="./src/img/postgresql.png" title="PostgreSQL" class="logo">
@@ -208,21 +216,21 @@
                     </a>
                 </div>
 
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="800">
                     <a href="https://git-scm.com/docs" class="link-linguagem" rel="noopener noreferrer" target="_blank">
                         <img alt="GIT" src="./src/img/git.png" title="GIT" class="logo">
                         <p class="nome">GIT</p>
                     </a>
                 </div>
 
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="900">
                     <a href="https://react.dev/learn" class="link-linguagem" rel="noopener noreferrer" target="_blank">
                         <img alt="React" src="./src/img/react.png" title="React" class="logo">
                         <p class="nome">React</p>
                     </a>
                 </div>
 
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="1000">
                     <a href="https://nodejs.org/pt-br/docs" class="link-linguagem" rel="noopener noreferrer"
                         target="_blank">
                         <img alt="NodeJS" src="./src/img/nodejs.png" title="NodeJS" class="logo">
@@ -230,7 +238,7 @@
                     </a>
                 </div>
 
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="1100">
                     <a href="https://www.mongodb.com/docs/" class="link-linguagem" rel="noopener noreferrer"
                         target="_blank">
                         <img alt="MongoDB" src="./src/img/mongodb.png" title="MongoDB" class="logo">
@@ -238,14 +246,14 @@
                     </a>
                 </div>
 
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="1200">
                     <a href="https://api.jquery.com/" class="link-linguagem" rel="noopener noreferrer" target="_blank">
                         <img alt="jQuery" src="./src/img/jquery.png" title="jQuery" class="logo">
                         <p class="nome">jQuery</p>
                     </a>
                 </div>
 
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="1300">
                     <a href="https://sass-lang.com/documentation/" class="link-linguagem" rel="noopener noreferrer"
                         target="_blank">
                         <img alt="SASS" src="./src/img/sass.png" title="SASS" class="logo">
@@ -253,7 +261,7 @@
                     </a>
                 </div>
 
-                <div class="linguagem">
+                <div class="linguagem" data-aos="flip-left" data-aos-delay="1400">
                     <a href="https://styled-components.com/docs" class="link-linguagem" rel="noopener noreferrer"
                         target="_blank">
                         <img alt="Styled Components" src="./src/img/styled-components.png" title="Styled Components"
@@ -273,6 +281,7 @@
                 essenciais para um ambiente de trabalho para a equipe onde cada membro contribui para alcançar
                 objetivos comuns.<br>Estou entusiasmado para aplicar essas habilidades e aprender a trabalhar em equipe
                 em um contexto profissional.
+            </p>
         </section>
 
         <section class="aprendizado-continuo">
@@ -280,6 +289,7 @@
             <p class="paragrafo">Estou comprometido com o aprendizado contínuo e sempre estou em busca de novas
                 oportunidades para me desenvolver como profissional.<br>Estou aberto a receber feedback construtivo e
                 estou disposto a me adaptar às necessidades do projeto ou da equipe.
+            </p>
         </section>
 
         <section class="consideracoes-finais">
@@ -289,20 +299,23 @@
                 para discutir qualquer projeto específico ou responder a quaisquer perguntas adicionais que possam
                 surgir.<br>Mais uma vez, obrigado e espero ter a oportunidade de colaborar com você em futuros
                 projetos.
+            </p>
         </section>
 
         <section class="curriculo">
             <h2 class="titulo">Download do Currículo</h2>
             <p class="paragrafo">Obrigado por se interessar pelo meu currículo.<br>Clique no botão abaixo para fazer o
                 download.</p><a href="./src/Currículo - José Carlos Dias dos Santos Júnior.pdf"
-                class="botao-download-curriculo" download="Currículo - José Carlos">Baixar currículo<i
+                class="botao-download-curriculo" data-aos="zoom-in-right" data-aos-duration="1000" download="Currículo - José Carlos">Baixar currículo<i
                     class="icone-download material-icons">file_download</i></a>
+            </p>
         </section>
 
         <section class="fale-comigo" id="fale-comigo">
             <h2 class="titulo">Fale comigo</h2>
             <p class="paragrafo">Quer falar comigo? Ainda tem alguma dúvida?<br>Preencha os campos abaixo com as suas
                 informações e entrarei em contato em breve.
+            </p>
         </section>
 
         <div class="form-container">

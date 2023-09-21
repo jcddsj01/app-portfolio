@@ -1,3 +1,6 @@
+// INITIALIZE AOS - INICIALIZAR AOS
+AOS.init();
+
 // Carousel - Carrosel
 const carousel = document.querySelector(".carousel");
 const firstImg = carousel.querySelectorAll("img")[0];
