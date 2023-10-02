@@ -45,13 +45,11 @@ body {
 .desenvolvedor {
     text-transform: uppercase;
 }
-/* End - Fim */
 
 /* Oculta o estilo do icone do menu */
 .button {
     display: none;
 }
-/* End - Fim */
 
 .item-menu {
     text-transform: uppercase;
@@ -65,7 +63,6 @@ body {
     color: var(--cor-laranja);
     border-bottom: 3px solid var(--cor-laranja);
 }
-/* Fim - Header - Cabeçalho */
 
 .linha-cabecalho {
     border: none;
@@ -216,7 +213,6 @@ body {
     right: 3px;
     font-size: 20px
 }
-/* Fim - Portfólio - Projetos */
 
 /* Habilidades Técnicas  */
 .linguagens-de-programacao {
@@ -274,7 +270,6 @@ body {
     padding: 15px 0 5px;
     text-align: center;
 }
-/* Fim - Habilidades Técnicas */
 
 .botao-download-curriculo {
     background-image: linear-gradient(to right, var(--cor-preto), var(--cor-cinza-escuro));
@@ -335,7 +330,8 @@ label {
     text-transform: uppercase;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     border-radius: 2px;
@@ -389,38 +385,71 @@ textarea:focus {
     text-decoration: underline;
     text-underline-position: under
 }
-    /* Fim - Form - Formulário  */
-/* Fim - Main - Estrutura */
 
 /* Footer - Rodapé */
+.linha-rodape {
+    margin: 100px 0 5px;
+    border: none;
+    border-top: 3px solid var(--cor-laranja);
+}
+
 .rodape {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-image: linear-gradient(to right, var(--cor-preto), var(--cor-cinza-escuro));
-    height: auto;
     width: 100%;
     padding: 20px;
-    margin-top: 100px;
     line-height: 25px;
 }
 
 .titulo-rodape {
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1em;
     letter-spacing: 2px;
 }
 
-.titulo-rodape a {
-    text-decoration: none;
-    color: var(--cor-cinza)
+.paragrafo-rodape {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 5px;
 }
 
-.titulo-rodape a:hover {
+.icones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.icones a:hover i {
+    animation: translateY 0.8s infinite alternate;
+    color: var(--cor-laranja);
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-5px) scale(1.2);
+    }
+}
+
+.rodape a {
+    text-decoration: none;
+    color: var(--cor-cinza);
+    padding: 0 5px;
+}
+
+.rodape a:hover {
     text-decoration: underline;
     text-underline-position: under;
 }
-/* Fim - Footer - Rodapé */
 
 .voltar-comeco {
     display: none;
