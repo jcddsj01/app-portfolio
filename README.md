@@ -1,4 +1,12 @@
-## Projeto - Portfólio <br> Desenvolvido por minha autoria.
+<h1 align="center">
+  Portfólio
+</h1>
+
+<div align="center">
+  <img src="src/img/projetos/portfolio.png" width="100%" />
+</div>
+
+## Projeto - Portfólio
 
 Nesse portfólio, você encontrará uma introdução sucinta sobre minha pessoa, informações-chave sobre os
 principais projetos que realizei, uma lista de minhas habilidades técnicas relevantes. Além disso, há um botão
@@ -16,11 +24,14 @@ Tecnologias Utilizadas:
 * [AvePDF:](https://avepdf.com/pt) Ele disponibiliza ferramentas online para manipular arquivos PDF, permitindo aos usuários converter, editar, combinar, compactar e desbloquear esses documentos.
 * [FormSubmit:](https://formsubmit.co/) É um serviço online que simplifica o envio de dados de formulários em sites. Ao integrá-lo a um formulário HTML, ele encaminha os dados submetidos pelos usuários para um destino escolhido, como um e-mail. O serviço opera via URLs personalizados definidos no atributo "action" do formulário, processando e redirecionando os dados automaticamente.
 
+Créditos:
+* Criado por minha autoria | [José Carlos • jcddsj01](https://github.com/jcddsj01)
+
 Implantação do Projeto no GitHub Pages: [Explore o projeto clicando aqui.](https://jcddsj01.github.io/portfolio/)
 
 ---
 
-## Project - Portfolio <br> Developed by me.
+## Project - Portfolio
 
 In this portfolio, you'll find a brief introduction to me, key information about my
 projects I've carried out, a list of my relevant technical skills. In addition, there is a
@@ -37,5 +48,8 @@ Technologies used:
 * [TinyJPG](https://tinyjpg.com/) e [TinyPNG:](https://tinypng.com/) The website used is an online tool that compresses JPEG and PNG images without losing much quality. It reduces the size of image files using efficient compression algorithms.
 * [AvePDF:](https://avepdf.com/pt) It provides online tools for manipulating PDF files, allowing users to convert, edit, combine, compress and unlock these documents.
 * [FormSubmit:](https://formsubmit.co/) It's an online service that simplifies sending data from forms on websites. By integrating it with an HTML form, it forwards the data submitted by users to a chosen destination, such as an e-mail. The service operates via customized URLs defined in the "action" attribute of the form, processing and redirecting the data automatically.
+
+Credits:
+* Created by me | [José Carlos • jcddsj01](https://github.com/jcddsj01)
 
 Project deployment on GitHub Pages: [Explore the project by clicking here.](https://jcddsj01.github.io/portfolio/)
