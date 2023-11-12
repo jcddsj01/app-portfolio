@@ -27,7 +27,7 @@ Tecnologias Utilizadas:
 Créditos:
 * Criado por minha autoria | [José Carlos • jcddsj01](https://github.com/jcddsj01)
 
-Implantação do Projeto no GitHub Pages: [Explore o projeto clicando aqui.](https://portfolio-jcddsj01.vercel.app/)
+Implantação do Projeto no Vercel: [Explore o projeto clicando aqui.](https://portfolio-jcddsj01.vercel.app/)
 
 ---
 
@@ -52,4 +52,4 @@ Technologies used:
 Credits:
 * Created by me | [José Carlos • jcddsj01](https://github.com/jcddsj01)
 
-Project deployment on GitHub Pages: [Explore the project by clicking here.](https://portfolio-jcddsj01.vercel.app/)
+Project deployment on Vercel: [Explore the project by clicking here.](https://portfolio-jcddsj01.vercel.app/)
