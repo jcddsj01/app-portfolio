@@ -71,7 +71,6 @@ carousel.addEventListener("touchmove", dragging);
 carousel.addEventListener("mouseup", dragStop);
 carousel.addEventListener("mouseleave", dragStop);
 carousel.addEventListener("touchend", dragStop);
-// End - Fim
 
 // Formatting the phone - Formatando o telefone.
 const telefoneInput = document.getElementById("tel");
@@ -88,7 +87,6 @@ function formatarTelefone(e) {
 telefoneInput.addEventListener("input", e => {
     formatarTelefone(e.target);
 });
-// End - Fim
 
 // Ativa o botão para um menu
 const button = document.getElementById('button');
@@ -96,7 +94,6 @@ const button = document.getElementById('button');
 function handleClick() {
     button.classList.toggle('active');
 }
-// End - Fim
 
 // Menu 
 const iconeMenu = document.getElementById("button");
@@ -117,7 +114,6 @@ function scrollToSection(e) {
         });
     }
 }
-// End - Fim
 
 // Smooth scrolling navigation menu items and button that returns to the top of the page.
 // Itens do menu de navegação com rolagem suave e botão que retorna ao topo da página.
@@ -150,7 +146,6 @@ function scrollToTopSmoothly() {
 voltarComecoBtn.addEventListener("click", () => {
     scrollToTopSmoothly();
 });
-// End - Fim
 
 // Captures the name of the form and displays it in the message textarea.
 // Captura o nome do formulário e mostra no textarea da mensagem.
@@ -173,4 +168,3 @@ function updateMessage() {
     const message = name ? `Olá, sou ${name}, e estou entrando em contato para podermos conversar mais detalhadamente.` : "";
     messageTextarea.value = message;
 }
-// End - Fim

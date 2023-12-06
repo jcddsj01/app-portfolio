@@ -71,7 +71,6 @@ body {
 }
 
 /* Main - Estrutura */
-
 .estrutura {
     margin: 0 26px;
 }
@@ -133,13 +132,15 @@ body {
     font-size: .9em
 }
 
-.foto-perfil {
-    display: flex;
-    margin: 0 auto 50px;
+.resumo-pessoal .foto-perfil {
+    display: block;
     width: 250px;
     height: 250px;
-    border-radius: 100%;
-    border: 3px solid var(--cor-cinza-claro)
+    margin: 0 auto 50px;
+    border: 3px solid var(--cor-cinza-claro);
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
 }
 
 /* Portfólio - Projetos */
