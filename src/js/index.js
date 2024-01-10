@@ -1,7 +1,9 @@
-// INITIALIZE AOS - INICIALIZAR AOS
+// INICIALIZAR AOS
+// INITIALIZE AOS
 AOS.init();
 
-// Carousel - Carrosel
+// Carrosel
+// Carousel
 const carousel = document.querySelector(".carousel");
 const firstImg = carousel.querySelectorAll("img")[0];
 const arrowIcons = document.querySelectorAll(".wrapper span");
@@ -72,7 +74,8 @@ carousel.addEventListener("mouseup", dragStop);
 carousel.addEventListener("mouseleave", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
-// Formatting the phone - Formatando o telefone.
+// Formatando o telefone
+// Formatting the phone
 const telefoneInput = document.getElementById("tel");
 
 function formatarTelefone(e) {
@@ -89,6 +92,7 @@ telefoneInput.addEventListener("input", e => {
 });
 
 // Ativa o botão para um menu
+// Activates the button for a menu
 const button = document.getElementById('button');
 
 function handleClick() {
@@ -115,9 +119,9 @@ function scrollToSection(e) {
     }
 }
 
-// Smooth scrolling navigation menu items and button that returns to the top of the page.
-// Itens do menu de navegação com rolagem suave e botão que retorna ao topo da página.
-const sections = ["about-me", "courses", "skills", "projects", "contact-me"];
+// Itens do menu de navegação com rolagem suave e botão que retorna ao topo da página
+// Smooth scrolling navigation menu items and button that returns to the top of the page
+const sections = ["about-me", "skills", "projects", "contact-me"];
 sections.forEach(e => {
     document.querySelector(`#${e}`).addEventListener("click", scrollToSection);
 });
@@ -147,8 +151,8 @@ voltarComecoBtn.addEventListener("click", () => {
     scrollToTopSmoothly();
 });
 
-// Captures the name of the form and displays it in the message textarea.
-// Captura o nome do formulário e mostra no textarea da mensagem.
+// Captures the name of the form and displays it in the message textarea
+// Captura o nome do formulário e mostra no textarea da mensagem
 const nameInput = document.getElementById("name");
 const messageTextarea = document.getElementById("message");
 
@@ -157,7 +161,6 @@ nameInput.addEventListener("input", () => {
 });
 
 messageTextarea.addEventListener("input", () => {
-    // Impedir que a mensagem seja atualizada automaticamente se o usuário estiver editando o texto manualmente.
     if (!nameInput.value) {
         updateMessage();
     }
