@@ -117,12 +117,12 @@ function scrollToSection(e) {
 
 // Smooth scrolling navigation menu items and button that returns to the top of the page.
 // Itens do menu de navegação com rolagem suave e botão que retorna ao topo da página.
-const sections = ["quem-sou", "habilidades", "portfolio", "contate-me"];
+const sections = ["about-me", "courses", "skills", "projects", "contact-me"];
 sections.forEach(e => {
     document.querySelector(`#${e}`).addEventListener("click", scrollToSection);
 });
 
-const voltarComecoBtn = document.getElementById("voltar-comeco");
+const voltarComecoBtn = document.getElementById("back-start");
 
 function mostrarBtnVoltarComeco() {
     voltarComecoBtn.style.display = "block";

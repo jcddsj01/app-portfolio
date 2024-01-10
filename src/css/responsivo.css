@@ -1,10 +1,13 @@
 @media screen and (max-width:600px) {
-    .navegacao {
+    .navbar {
         padding: 25px;
     }
 
-    /* Estilo do icone do menu */
-    .button {
+    .developer-name {
+        width: 40px;
+    }
+
+    .button-menu {
         display: flex;
         flex-direction: column;
         margin: auto 0; 
@@ -14,73 +17,69 @@
         border: 0;
     }
 
-    .button:hover {
+    .button-menu:hover {
         cursor: pointer;
     }
 
-    .button span {
+    .button-menu span {
         width: 30px;
         height: 2px;
         border-radius: 10px;
-        background: var(--cor-cinza-claro);
+        background: var(--button-menu-color);
         transition: all 0.4s;
     }
 
-    .button.active span:nth-child(2) {
+    .button-menu.active span:nth-child(2) {
         opacity: 0;
         width: 0px;
     }
 
-    .button.active span:nth-child(1) {
+    .button-menu.active span:nth-child(1) {
         transform: rotate(-45deg) translate(-4px, 4px);
     }
 
-    .button.active span:nth-child(3) {
+    .button-menu.active span:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -4px);
     }
-    /* Fim - Estilo do Icone do Menu */
 
     .menu {
         display: none;
         flex-direction: column;
-        background-image: linear-gradient(to right, var(--cor-preto), var(--cor-cinza-escuro));
-        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
         z-index: 1;
-        width: 100%;
         padding: 10px;
-        border-radius: 2px 2px 2px 30px;
+        width: 100%;
         position: absolute;
-        margin-top: 248px;        
+        margin-top: 320px;
+        align-items: flex-end;
+        padding-right: 40px;
+        background-color: var(--background-color);      
     }
 
     .menu.show {
         display: flex;
     }
 
-    .item-menu {
+    .menu-item {
         transition: background-color .2s ease-in-out;
         padding: 5px 8px;
         margin: 5px 10px;
     }
 
-    .foto-perfil {
+    .profile-photo {
         display: flex;
-    }
-
-    .destaque-ola {
-        font-size: 1.6em;
-    }
-
-    .destaque-texto {
-        font-size: .8em;
-    }
-
-    .foto-perfil {
         margin: 0 auto 50px;
         width: 180px;
         height: 180px;
         border-radius: 100%;
         border: 3px solid var(--cor-cinza-claro)
+    }
+
+    .emphasis {
+        font-size: 1.6em;
+    }
+
+    .emphasis-text {
+        font-size: .8em;
     }
 
     .carousel img {
@@ -95,7 +94,7 @@
         right: 6px;
     }
 
-    .linguagens-de-programacao {
+    .programming-languages {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -103,20 +102,17 @@
         width: 100%;
     }
 
-    .voltar-comeco {
-        padding-top: 0;
-        font-size: .8em;
-        width: 140px;
+    .send-button {
+        padding: 0 10px 25px 20px;
     }
 }
 
 @media screen and (min-width:601px) and (max-width:768px) {
-    .navegacao {
+    .navbar {
         padding: 25px
     }
 
-    /* Estilo do icone do menu */
-    .button {
+    .button-menu {
         display: flex;
         flex-direction: column;
         margin: auto 0; 
@@ -126,50 +122,49 @@
         border: 0;
     }
 
-    .button:hover {
+    .button-menu:hover {
         cursor: pointer;
     }
 
-    .button span {
+    .button-menu span {
         width: 30px;
         height: 2px;
         border-radius: 10px;
-        background: var(--cor-cinza-claro);
+        background: var(--button-menu-color);
         transition: all 0.4s;
     }
 
-    .button.active span:nth-child(2) {
+    .button-menu.active span:nth-child(2) {
         opacity: 0;
         width: 0px;
     }
 
-    .button.active span:nth-child(1) {
+    .button-menu.active span:nth-child(1) {
         transform: rotate(-45deg) translate(-4px, 4px);
     }
 
-    .button.active span:nth-child(3) {
+    .button-menu.active span:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -4px);
     }
-    /* Fim - Estilo do Icone do Menu */
 
     .menu {
         display: none;
         flex-direction: column;
-        background-image: linear-gradient(to right, var(--cor-preto), var(--cor-cinza-escuro));
-        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
         z-index: 1;
         padding: 10px;
-        border-radius: 2px 2px 2px 30px;
         width: 100%;
         position: absolute;
-        margin-top: 248px;        
+        margin-top: 320px;
+        align-items: flex-end;
+        padding-right: 40px;
+        background-color: var(--background-color);        
     }
 
     .menu.show {
         display: flex
     }
 
-    .item-menu {
+    .menu-item {
         transition: background-color .2s ease-in-out;
         padding: 5px 8px;
         margin: 5px 10px
@@ -187,7 +182,7 @@
         right: 6px
     }
 
-    .linguagens-de-programacao {
+    .programming-languages {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -195,7 +190,7 @@
         width: 460px
     }
 
-    .voltar-comeco {
+    .send-button {
         padding-top: 0;
         font-size: .8em;
         width: 140px

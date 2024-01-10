@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./src/img/profile/favicon.ico" type="image/x-icon">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Google Icons -->
@@ -11,9 +13,9 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Google Fonts -->
+    <!-- Google Fonts | Josefin Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
     <!-- CSS -->
     <link href="./src/css/reset.css" rel="stylesheet">
     <link href="./src/css/estilos.css" rel="stylesheet">
@@ -21,20 +23,23 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Javascript -->
-    <script src="./src/js/index.js" defer></script>
-    <title>Sejam todos bem-vindos ao meu portfólio.</title>
+    <script src="./src/js/index.js" defer></script> <!-- Execução do JavaScript após o carregamento do HTML -->
+    <title>Portfólio | José Carlos</title>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="navegacao">
-            <div class="desenvolvedor">José Carlos</div>
+    <header class="header">
+        <nav class="navbar">
+            <img src="./src/img/profile/developer-name.png" class="developer-name"></div>
+
             <div class="menu">
-                <a href="#introducao" class="item-menu" id="quem-sou">Quem sou</a>
-                <a href="#habilidades-tecnicas" class="item-menu" id="habilidades">Habilidades</a>
-                <a href="#projetos" class="item-menu" id="portfolio">Portfólio</a>
+                <a href="#link-about-me" class="menu-item" id="about-me">Sobre mim</a>
+                <a href="#link-courses" class="menu-item" id="courses">Cursos</a> <!-- Under construction -->
+                <a href="#link-skills" class="menu-item" id="skills">Habilidades</a>
+                <a href="#link-projects" class="menu-item" id="projects">Projetos</a>
             </div>
-            <button type="button" id="button" class="button" onclick="handleClick()">
+
+            <button type="button" id="button" class="button-menu" onclick="handleClick()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -42,51 +47,45 @@
         </nav>
     </header>
 
-    <hr class="linha-cabecalho">
-
-    <main class="estrutura">
-        <section class="saudacao">
-            <h1 class="destaque-ola">Olá,</h1>
-            <h1>Sou <span class="destaque-texto">José Carlos,</span></h1>
+    <main class="app">
+        <section class="salutation">
+            <h1 class="emphasis">Olá,</h1>
+            <h1>Sou <span class="emphasis-text">José Carlos,</span></h1>
             <h1>Desenvolvedor Web Front-end</h1>
-            <a href="#fale-comigo" class="contate-me" id="contate-me" data-aos="zoom-in-right" data-aos-duration="1000">Contate-me</a>
+            <a href="#link-contact-me" class="contate-me" id="contact-me" data-aos="zoom-in-right" data-aos-duration="1000">Contate-me</a>
         </section>
 
-        <section class="introducao" id="introducao">
-            <h2 class="titulo">Introdução</h2>
-            <p class="paragrafo">Olá e bem-vindo à minha apresentação profissional de <span
-                    class="destaque-texto">portfólio.</span><br>Sou <span class="destaque-texto">José Carlos,</span> um
-                <span class="destaque-texto">Desenvolvedor Web Front-end</span> que gosta muito de programação e
+        <section class="about-me" id="link-about-me">
+            <h2 class="title">Sobre mim</h2>
+            <p class="description">Olá e bem-vindo à minha apresentação profissional de <span
+                    class="emphasis-text">portfólio.</span><br>Sou <span class="emphasis-text">José Carlos,</span> um
+                <span class="emphasis-text">Desenvolvedor Web Front-end</span> que gosta muito de programação e
                 desenvolvimento de software.<br>Embora eu não tenha experiência em empresas, estou entusiasmado para
                 compartilhar meu conhecimento, projetos e habilidades que adquiri como desenvolvedor. Vamos explorar
                 juntos!
             </p>
         </section>
 
-        <section class="resumo-pessoal">
-            <img alt="Foto do Perfil" src="./src/img/perfil/foto-perfil.jpeg" title="Foto do Perfil" class="foto-perfil" data-aos="fade-down" data-aos-delay="150" data-aos-duration="1000">
-            <h2 class="titulo">resumo pessoal</h2>
-            <p class="paragrafo">Começando, deixe-me falar um pouco <span class="destaque-texto">sobre
-                    mim.</span><br>Sou um <span class="destaque-texto">entusiasta</span> da <span
-                    class="destaque-texto">programação</span> e estou sempre buscando novos <span
-                    class="destaque-texto">desafios</span> para expandir meus <span
-                    class="destaque-texto">conhecimentos.</span><br>Dedico parte do meu tempo para aprender novas
-                <span class="destaque-texto">tecnologias</span> e desenvolver <span class="destaque-texto">projetos
-                    pessoais</span> para aprimorar minhas <span class="destaque-texto">habilidades.</span>
+        <section class="personal-summary">
+            <img alt="Foto do Perfil" src="./src/img/profile/profile-photo.jpeg" title="Foto do Perfil" class="profile-photo" data-aos="fade-down" data-aos-delay="150" data-aos-duration="1000">
+            <h2 class="title">resumo pessoal</h2>
+            <p class="description">Começando, deixe-me falar um pouco sobre
+                    mim.<br>Sou um entusiasta da programação e estou sempre buscando novos desafios para expandir meus conhecimentos.<br>Dedico parte do meu tempo para aprender novas tecnologias e desenvolver projetos
+                    pessoais para aprimorar minhas habilidades.
             </p>
         </section>
 
-        <section class="educacao-aprendizado">
-            <h2 class="titulo">educação e aprendizado</h2>
-            <p class="paragrafo">Apesar de não ter experiência profissional em empresas, busquei uma base sólida de
+        <section class="education-learning">
+            <h2 class="title">educação e aprendizado</h2>
+            <p class="description">Apesar de não ter experiência profissional em empresas, busquei uma base sólida de
                 conhecimento por meio da educação e aprendizado autodidata. Completei cursos online, participei de
                 workshops e estudei tutoriais para dominar as habilidades necessárias como programador.
             </p>
         </section>
 
-        <section class="projetos-pessoais">
-            <h2 class="titulo">projetos pessoais</h2>
-            <p class="paragrafo">Uma parte significativa do meu tempo é dedicado a desenvolver projetos
+        <section class="personal-projects">
+            <h2 class="title">projetos pessoais</h2>
+            <p class="description">Uma parte significativa do meu tempo é dedicado a desenvolver projetos
                 pessoais.<br>Criei aplicativos, websites e scripts, abrangendo diferentes áreas, desde desenvolvimento
                 web até análise de dados.<br>Gosto de adotar o clean code como prática constante, pois ele se
                 destaca por tornar o código altamente legível, facilmente compreensível e simples de ser
@@ -96,9 +95,9 @@
             </p>
         </section>
 
-        <section class="projetos" id="projetos">
-            <h2 class="titulo">Projetos</h2>
-            <p class="paragrafo">Apresento os projetos que desenvolvi durante minha trajetória como
+        <section class="projects" id="link-projects">
+            <h2 class="title">Projetos</h2>
+            <p class="description">Apresento os projetos que desenvolvi durante minha trajetória como
                 desenvolvedor.<br>Estarei constantemente atualizando esta lista com novos projetos e aquisições de
                 habilidades e tecnologias.
             </p>
@@ -109,99 +108,99 @@
 
             <div class="carousel">
                 <a href="https://github.com/jcddsj01/x-men-szpc" rel="noopener noreferrer" target="_blank">
-                    <img alt="Projeto - X-Men SZPC" src="./src/img/projetos/x-men-szpc.png" title="Projeto - X-Men SZPC"
+                    <img alt="Projeto - X-Men SZPC" src="./src/img/projects/x-men-szpc.png" title="Projeto - X-Men SZPC"
                         draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/doom-patrol-szpc" rel="noopener noreferrer" target="_blank">
-                    <img alt="Projeto - Doom Patrol" src="./src/img/projetos/doom-patrol.png" title="Projeto - Doom Patrol"
+                    <img alt="Projeto - Doom Patrol" src="./src/img/projects/doom-patrol.png" title="Projeto - Doom Patrol"
                         draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/landing-page-indecor" rel="noopener noreferrer" target="_blank">
-                    <img alt="Projeto - InDecor" src="./src/img/projetos/landing-page-indecor.png" title="Projeto - InDecor"
+                    <img alt="Projeto - InDecor" src="./src/img/projects/landing-page-indecor.png" title="Projeto - InDecor"
                         draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/barber-dev" rel="noopener noreferrer" target="_blank">
-                    <img alt="Projeto - Dev Barber - Sua Barbearia!" src="./src/img/projetos/barber-dev.png"
+                    <img alt="Projeto - Dev Barber - Sua Barbearia!" src="./src/img/projects/barber-dev.png"
                         title="Projeto - Dev Barber - Sua Barbearia!" draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/site-it-solutions" rel="noopener noreferrer" target="_blank">
-                    <img alt="Projeto - IT Solutions" src="./src/img/projetos/it-solutions.png"
+                    <img alt="Projeto - IT Solutions" src="./src/img/projects/it-solutions.png"
                         title="Projeto - IT Solutions" draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/calculadora-juros-compostos" rel="noopener noreferrer" target="_blank">
-                    <img alt="Projeto - Calculadora de Juros Compostos" src="./src/img/projetos/calculadora-juros-compostos-v1.png"
+                    <img alt="Projeto - Calculadora de Juros Compostos" src="./src/img/projects/calculadora-juros-compostos-v1.png"
                         title="Projeto - Calculadora de Juros Compostos" draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/calculo-imc" rel="noopener noreferrer" target="_blank">
-                    <img alt="Projeto - Cálculo IMC" src="./src/img/projetos/calculo-imc.png" title="Projeto - Cálculo IMC"
+                    <img alt="Projeto - Cálculo IMC" src="./src/img/projects/calculo-imc.png" title="Projeto - Cálculo IMC"
                         draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/previsao-tempo" rel="noopener noreferrer" target="_blank">
-                    <img alt="Projeto - Previsão do Tempo" src="./src/img/projetos/previsao-do-tempo.png" title="Projeto - Previsão do Tempo"
+                    <img alt="Projeto - Previsão do Tempo" src="./src/img/projects/previsao-do-tempo.png" title="Projeto - Previsão do Tempo"
                         draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/gerenciador-financa" rel="noopener noreferrer" target="_blank">
-                    <img alt="Projeto - Gerenciador de Finanças" src="./src/img/projetos/gerenciador-financas.png"
+                    <img alt="Projeto - Gerenciador de Finanças" src="./src/img/projects/gerenciador-financas.png"
                         title="Projeto - Gerenciador de Finanças" draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/conversor-moedas" rel="noopener noreferrer" target="_blank">
-                    <img alt="Projeto - Conversor de Moedas" src="./src/img/projetos/conversor-moedas.png"
+                    <img alt="Projeto - Conversor de Moedas" src="./src/img/projects/conversor-moedas.png"
                         title="Projeto - Conversor de Moedas" draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/formulario-com-validacao" rel="noopener noreferrer"
                     target="_blank">
-                    <img alt="Projeto - Formulário com Validação" src="./src/img/projetos/formulario-com-validacao.png"
+                    <img alt="Projeto - Formulário com Validação" src="./src/img/projects/formulario-com-validacao.png"
                         title="Projeto - Formulário com Validação" draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/lista-de-tarefas" rel="noopener noreferrer"
                     target="_blank">
-                    <img alt="Projeto - Lista de Tarefas" src="./src/img/projetos/lista-de-tarefas.png"
+                    <img alt="Projeto - Lista de Tarefas" src="./src/img/projects/lista-de-tarefas.png"
                         title="Projeto - Lista de Tarefas" draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/dark-and-light-mode" rel="noopener noreferrer"
                     target="_blank">
-                    <img alt="Projeto - Tema Escuro e Claro" src="./src/img/projetos/dark-and-light-mode.png"
+                    <img alt="Projeto - Tema Escuro e Claro" src="./src/img/projects/dark-and-light-mode.png"
                         title="Projeto - Tema Escuro e Claro" draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/cronometro-js" rel="noopener noreferrer"
                     target="_blank">
-                    <img alt="Projeto - Cronômetro.js" src="./src/img/projetos/cronometro.png"
+                    <img alt="Projeto - Cronômetro.js" src="./src/img/projects/cronometro.png"
                         title="Projeto - Cronômetro.js" draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/site-filme-super-mario-bros" rel="noopener noreferrer"
                     target="_blank">
-                    <img alt="Projeto - The Super Mario Bros" src="./src/img/projetos/super-mario-bros.png"
+                    <img alt="Projeto - The Super Mario Bros" src="./src/img/projects/super-mario-bros.png"
                         title="Projeto - The Super Mario Bros" draggable="false">
                 </a>
 
                 <a href="https://jcddsj01.github.io/landing-page-guardioes-da-galaxia/" rel="noopener noreferrer"
                     target="_blank">
-                    <img alt="Projeto - Guardiões da Galáxia" src="./src/img/projetos/landing-page-guardioes-da-galaxia.png"
+                    <img alt="Projeto - Guardiões da Galáxia" src="./src/img/projects/landing-page-guardioes-da-galaxia.png"
                         title="Projeto - Guardiões da Galáxia" draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/one-piece-szpc" rel="noopener noreferrer"
                     target="_blank">
-                    <img alt="Projeto - One Piece" src="./src/img/projetos/one-piece-szpc.png"
+                    <img alt="Projeto - One Piece" src="./src/img/projects/one-piece-szpc.png"
                         title="Projeto - One Piece" draggable="false">
                 </a>
 
                 <a href="https://github.com/jcddsj01/calculadora-windows" rel="noopener noreferrer" target="_blank">
-                    <img alt="Projeto - Calculadora do Windows" src="./src/img/projetos/calculadora-windows.png"
+                    <img alt="Projeto - Calculadora do Windows" src="./src/img/projects/calculadora-windows.png"
                         title="Projeto - Calculadora do Windows" draggable="false">
                 </a>
             </div>
@@ -209,89 +208,89 @@
             <span class="material-symbols-outlined" id="right">arrow_right</span>
         </div>
 
-        <section class="habilidades-tecnicas" id="habilidades-tecnicas">
-            <h2 class="titulo">habilidades técnicas</h2>
-            <p class="paragrafo">Aqui estão algumas das habilidades técnicas que eu adquiri ao longo da minha jornada
+        <section class="skills" id="link-skills">
+            <h2 class="title">habilidades técnicas</h2>
+            <p class="description">Aqui estão algumas das habilidades técnicas que eu adquiri ao longo da minha jornada
                 como desenvolvedor, bem como algumas das habilidades que ainda estou aprimorando.<br>
             </p>
 
-            <div class="linguagens-de-programacao">
-                <div class="linguagem" data-aos="flip-left" data-aos-delay="100">
-                    <a href="https://www.w3schools.com/html/html_intro.asp" class="link-linguagem"
+            <div class="programming-languages">
+                <div class="language" data-aos="flip-left" data-aos-delay="100">
+                    <a href="https://www.w3schools.com/html/html_intro.asp" class="link-language"
                         rel="noopener noreferrer" target="_blank">
-                        <img alt="HTML5" src="./src/img/linguagem-programacao/html5.png" title="HTML5" class="logo">
-                        <p class="nome">HTML5</p>
+                        <img alt="HTML5" src="./src/img/programming-language/html5.png" title="HTML5" class="brand-logo">
+                        <p class="name">HTML5</p>
                     </a>
                 </div>
 
-                <div class="linguagem" data-aos="flip-left" data-aos-delay="200">
-                    <a href="https://www.w3schools.com/css/css_intro.asp" class="link-linguagem"
+                <div class="language" data-aos="flip-left" data-aos-delay="200">
+                    <a href="https://www.w3schools.com/css/css_intro.asp" class="link-language"
                         rel="noopener noreferrer" target="_blank">
-                        <img alt="CSS3" src="./src/img/linguagem-programacao/css3.png" title="CSS3" class="logo">
-                        <p class="nome">CSS3</p>
+                        <img alt="CSS3" src="./src/img/programming-language/css3.png" title="CSS3" class="brand-logo">
+                        <p class="name">CSS3</p>
                     </a>
                 </div>
 
-                <div class="linguagem" data-aos="flip-left" data-aos-delay="300">
-                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" class="link-linguagem"
+                <div class="language" data-aos="flip-left" data-aos-delay="300">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" class="link-language"
                         rel="noopener noreferrer" target="_blank">
-                        <img alt="Javascript" src="./src/img/linguagem-programacao/javascript.png" title="Javascript" class="logo">
-                        <p class="nome">Javascript</p>
+                        <img alt="Javascript" src="./src/img/programming-language/javascript.png" title="Javascript" class="brand-logo">
+                        <p class="name">Javascript</p>
                     </a>
                 </div>
 
-                <div class="linguagem" data-aos="flip-left" data-aos-delay="400">
-                    <a href="https://www.typescriptlang.org/docs/handbook/2/basic-types.html" class="link-linguagem"
+                <div class="language" data-aos="flip-left" data-aos-delay="400">
+                    <a href="https://www.typescriptlang.org/docs/handbook/2/basic-types.html" class="link-language"
                         rel="noopener noreferrer" target="_blank">
-                        <img alt="Typescript" src="./src/img/linguagem-programacao/typescript.png" title="Typescript" class="logo">
-                        <p class="nome">Typescript</p>
+                        <img alt="Typescript" src="./src/img/programming-language/typescript.png" title="Typescript" class="brand-logo">
+                        <p class="name">Typescript</p>
                     </a>
                 </div>
 
-                <div class="linguagem" data-aos="flip-left" data-aos-delay="700">
-                    <a href="https://www.postgresql.org/docs/" class="link-linguagem" rel="noopener noreferrer"
+                <div class="language" data-aos="flip-left" data-aos-delay="700">
+                    <a href="https://www.postgresql.org/docs/" class="link-language" rel="noopener noreferrer"
                         target="_blank">
-                        <img alt="PostgreSQL" src="./src/img/linguagem-programacao/postgresql.png" title="PostgreSQL" class="logo">
-                        <p class="nome">PostgreSQL</p>
+                        <img alt="PostgreSQL" src="./src/img/programming-language/postgresql.png" title="PostgreSQL" class="brand-logo">
+                        <p class="name">PostgreSQL</p>
                     </a>
                 </div>
 
-                <div class="linguagem" data-aos="flip-left" data-aos-delay="800">
-                    <a href="https://git-scm.com/docs" class="link-linguagem" rel="noopener noreferrer" target="_blank">
-                        <img alt="GIT" src="./src/img/linguagem-programacao/git.png" title="GIT" class="logo">
-                        <p class="nome">GIT</p>
+                <div class="language" data-aos="flip-left" data-aos-delay="800">
+                    <a href="https://git-scm.com/docs" class="link-language" rel="noopener noreferrer" target="_blank">
+                        <img alt="GIT" src="./src/img/programming-language/git.png" title="GIT" class="brand-logo">
+                        <p class="name">GIT</p>
                     </a>
                 </div>
 
-                <div class="linguagem" data-aos="flip-left" data-aos-delay="900">
-                    <a href="https://react.dev/learn" class="link-linguagem" rel="noopener noreferrer" target="_blank">
-                        <img alt="React" src="./src/img/linguagem-programacao/react.png" title="React" class="logo">
-                        <p class="nome">React</p>
+                <div class="language" data-aos="flip-left" data-aos-delay="900">
+                    <a href="https://react.dev/learn" class="link-language" rel="noopener noreferrer" target="_blank">
+                        <img alt="React" src="./src/img/programming-language/react.png" title="React" class="brand-logo">
+                        <p class="name">React</p>
                     </a>
                 </div>
 
-                <div class="linguagem" data-aos="flip-left" data-aos-delay="1000">
-                    <a href="https://nodejs.org/pt-br/docs" class="link-linguagem" rel="noopener noreferrer"
+                <div class="language" data-aos="flip-left" data-aos-delay="1000">
+                    <a href="https://nodejs.org/pt-br/docs" class="link-language" rel="noopener noreferrer"
                         target="_blank">
-                        <img alt="NodeJS" src="./src/img/linguagem-programacao/nodejs.png" title="NodeJS" class="logo">
-                        <p class="nome">NodeJS</p>
+                        <img alt="NodeJS" src="./src/img/programming-language/nodejs.png" title="NodeJS" class="brand-logo">
+                        <p class="name">NodeJS</p>
                     </a>
                 </div>
 
-                <div class="linguagem" data-aos="flip-left" data-aos-delay="1100">
-                    <a href="https://www.mongodb.com/docs/" class="link-linguagem" rel="noopener noreferrer"
+                <div class="language" data-aos="flip-left" data-aos-delay="1100">
+                    <a href="https://www.mongodb.com/docs/" class="link-language" rel="noopener noreferrer"
                         target="_blank">
-                        <img alt="MongoDB" src="./src/img/linguagem-programacao/mongodb.png" title="MongoDB" class="logo">
-                        <p class="nome">MongoDB</p>
+                        <img alt="MongoDB" src="./src/img/programming-language/mongodb.png" title="MongoDB" class="brand-logo">
+                        <p class="name">MongoDB</p>
                     </a>
                 </div>
 
             </div>
         </section>
 
-        <section class="trabalho-em-equipe">
-            <h2 class="titulo">trabalho em equipe</h2>
-            <p class="paragrafo">Embora sem experiência profissional, tenho grande interesse em participar de projetos
+        <section class="team-work">
+            <h2 class="title">trabalho em equipe</h2>
+            <p class="description">Embora sem experiência profissional, tenho grande interesse em participar de projetos
                 colaborativos em equipe.<br>Essas experiências são fundamentais para desenvolver habilidades de
                 comunicação, resolução de problemas e trabalho em grupo.<br>Acredito que essas competências sejam
                 essenciais para um ambiente de trabalho para a equipe onde cada membro contribui para alcançar
@@ -300,17 +299,17 @@
             </p>
         </section>
 
-        <section class="aprendizado-continuo">
-            <h2 class="titulo">aprendizado contínuo</h2>
-            <p class="paragrafo">Estou comprometido com o aprendizado contínuo e sempre estou em busca de novas
+        <section class="continuous-learning">
+            <h2 class="title">aprendizado contínuo</h2>
+            <p class="description">Estou comprometido com o aprendizado contínuo e sempre estou em busca de novas
                 oportunidades para me desenvolver como profissional.<br>Estou aberto a receber feedback construtivo e
                 estou disposto a me adaptar às necessidades do projeto ou da equipe.
             </p>
         </section>
 
-        <section class="consideracoes-finais">
-            <h2 class="titulo">Considerações Finais</h2>
-            <p class="paragrafo">Agradeço por dedicar seu tempo para conhecer meu portfólio. Espero que esta
+        <section class="final-considerations">
+            <h2 class="title">Considerações Finais</h2>
+            <p class="description">Agradeço por dedicar seu tempo para conhecer meu portfólio. Espero que esta
                 apresentação tenha fornecido uma visão geral do meu trabalho e das minhas habilidades. Estou ansioso
                 para discutir qualquer projeto específico ou responder a quaisquer perguntas adicionais que possam
                 surgir.<br>Mais uma vez, obrigado e espero ter a oportunidade de colaborar com você em futuros
@@ -318,76 +317,73 @@
             </p>
         </section>
 
-        <section class="curriculo">
-            <h2 class="titulo">Download do Currículo</h2>
-            <p class="paragrafo">Obrigado por se interessar pelo meu currículo.<br>Clique no botão abaixo para fazer o
+        <section class="curriculum">
+            <h2 class="title">Download do Currículo</h2>
+            <p class="description">Obrigado por se interessar pelo meu currículo.<br>Clique no botão abaixo para fazer o
                 download.</p><a href="./src/pdf/Currículo - José Carlos.pdf"
-                class="botao-download-curriculo" data-aos="zoom-in-right" data-aos-duration="1000" download="Currículo - José Carlos">Baixar currículo<i
-                    class="icone-download material-icons">file_download</i></a>
+                class="botao-download-curriculo button-download-resume" data-aos="zoom-in-right" data-aos-duration="1000" download="Currículo - José Carlos">Baixar currículo<i
+                    class="icon-download material-icons">file_download</i></a>
             </p>
         </section>
 
-        <section class="fale-comigo" id="fale-comigo">
-            <h2 class="titulo">Fale comigo</h2>
-            <p class="paragrafo">Quer falar comigo? Ainda tem alguma dúvida?<br>Preencha os campos abaixo com as suas
+        <section class="contact-me" id="link-contact-me">
+            <h2 class="title">Contacte-me</h2>
+            <p class="description">Quer falar comigo? Ainda tem alguma dúvida?<br>Preencha os campos abaixo com as suas
                 informações e entrarei em contato em breve.
             </p>
         </section>
 
         <div class="form-container">
-            <header class="cabecalho-form">Formulário de contato</header>
+            <header class="header-form">Formulário de contato</header>
 
-            <form action="https://formsubmit.co/jcddsj01@outlook.com" class="form" id="contato-form" method="POST">
-                <div class="form-grupo">
+            <form action="https://formsubmit.co/jcddsj01@outlook.com" class="form" id="contact-form" method="POST">
+                <div class="form-group">
                     <label for="name">Seu nome *</label>
                     <input name="name" id="name" maxlength="45" placeholder="Digite aqui seu nome" required>
                 </div>
 
-                <div class="form-grupo">
+                <div class="form-group">
                     <label for="email">E-mail *</label>
                     <input name="email" id="email" maxlength="35" placeholder="Digite aqui seu e-mail" required>
                 </div>
 
-                <div class="form-grupo">
+                <div class="form-group">
                     <label for="tel">Telefone *</label>
                     <input name="tel" id="tel" maxlength="15" placeholder="Digite aqui seu telefone" required>
                 </div>
 
-                <div class="form-grupo">
+                <div class="form-group">
                     <label for="subject">Assunto *</label>
                     <input name="subject" id="subject" maxlength="35" placeholder="Digite aqui o assunto" required>
                 </div>
 
-                <div class="form-grupo">
-                    <label for="mensagem">Mensagem *</label>
+                <div class="form-group">
+                    <label for="message">Mensagem *</label>
                     <textarea cols="30" id="message" maxlength="480" name="message" required rows="8">Olá, sou SEU NOME, e estou entrando em contato para podermos conversar mais detalhadamente.
                     </textarea>
                 </div>
 
                 <input name="_next" type="hidden" value="https://jcddsj01.github.io/portfolio/index.html">
 
-                <div class="botao">
-                    <button class="botao-enviar" type="submit">Enviar</button>
+                <div class="form-button">
+                    <button class="send-button" type="submit">Enviar</button>
                 </div>
             </form>
         </div>
     </main>
 
-    <hr class="linha-rodape">
-
-    <footer class="rodape">
-        <h3 class="titulo-rodape">&copy; 2023 - Portfólio, Feito por minha autoria.</h3>
-        <p class="paragrafo-rodape">Siga-me:</p>
-        <div class="icones">
+    <footer class="footer">
+        <h3 class="title-footer">&copy; 2023 - Portfólio, Feito por minha autoria.</h3>
+        <p class="description-footer">Siga-me:</p>
+        <div class="icons">
             <a href="https://github.com/jcddsj01" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
             <a href="https://www.linkedin.com/in/jose-carlos-703821254/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
             <a href="mailto:jcddsj01@outlook.com"><i class="fa-solid fa-envelope fa-lg"></i></a>
         </div>
     </footer>
 
-    <button class="voltar-comeco" id="voltar-comeco">
+    <button class="back-start" id="back-start">
         <span class="material-symbols-outlined">arrow_upward</span>
-        Retorne ao começo
     </button>
 
     <!-- Font Awesome -->
