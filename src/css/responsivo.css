@@ -105,6 +105,10 @@
     .send-button {
         padding: 0 10px 25px 20px;
     }
+
+    .back-start {
+        padding: 0 10px 20px 20px;
+    }
 }
 
 @media screen and (min-width:601px) and (max-width:768px) {
@@ -190,9 +194,7 @@
         width: 460px
     }
 
-    .send-button {
-        padding-top: 0;
-        font-size: .8em;
-        width: 140px
+    .back-start {
+        padding: 0 10px 20px 20px;
     }
 }
